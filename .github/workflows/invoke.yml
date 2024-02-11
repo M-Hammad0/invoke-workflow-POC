@@ -6,8 +6,8 @@ jobs:
   invoke-runner:
     uses: m-hammad0/reusable-workflow-POC/.github/workflows/test.yml@main
     secrets: inherit
-    # with:
-    #   foo: "this is foo"
+    with:
+      passed-var: "this is foo"
 
   foo:
     needs: [invoke-runner]
