@@ -1,0 +1,10 @@
+name: invoke-runner
+on:
+  workflow_dispatch:
+
+jobs:
+  invoke-runner:
+    uses: m-hammad0/reusable-workflow-POC/.github/workflows/test.yml@main
+    secrets: inherit
+    with:
+      foo: "this is foo"
